@@ -40,6 +40,8 @@ INSTALLED_APPS = [
     'backupdb',
     'django_extensions',
     'compressor',
+
+    'airmozilla',
 ]
 
 MIDDLEWARE = [
@@ -74,7 +76,7 @@ WSGI_APPLICATION = 'airmozilla.wsgi.application'
 # https://docs.djangoproject.com/en/1.11/ref/settings/#databases
 
 DATABASES = {
-    'default': dj_database_url.config(default='sqlite://db.sqlite3')
+    'default': dj_database_url.config(default='sqlite:///db.sqlite3')
 }
 
 
@@ -112,3 +114,11 @@ STATICFILES_FINDERS = (
 COMPRESS_PRECOMPILERS = (
     ('text/x-scss', 'django_pyscss.compressor.DjangoScssFilter'),
 )
+
+
+INXPO_PARAMETERS = {
+    'AUTH_CODE': 'chiathlunletrieswle5oaproableS',
+    'USER_CREDENTIALS': 'vi7ciuslap8las71adoepleth5uyIa',
+    # retrieved from https://api.onlinexperiences.com/scripts/Server.nxp?LASCmd=AI:4;F:APIUTILS!50500&APIUserAuthCode=chiathlunletrieswle5oaproableS&APIUserCredentials=vi7ciuslap8las71adoepleth5uyIa&OpCodeList=F&OutputFormat=X
+    'SHOW_KEY': 44908,
+}
