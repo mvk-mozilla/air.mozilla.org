@@ -123,3 +123,4 @@ INXPO_PARAMETERS = {
     # retrieved from https://api.onlinexperiences.com/scripts/Server.nxp?LASCmd=AI:4;F:APIUTILS!50500&APIUserAuthCode=chiathlunletrieswle5oaproableS&APIUserCredentials=vi7ciuslap8las71adoepleth5uyIa&OpCodeList=F&OutputFormat=X
     'SHOW_KEY': 44908,
 }
+PAGE_SIZE = 16
